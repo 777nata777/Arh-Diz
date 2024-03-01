@@ -7,7 +7,16 @@ $(document).ready(function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    autoplaySpeed: 1700,
+    autoplaySpeed: 3000,
+  });
+
+  /* Number */
+  
+
+
+  $(".slider").on("afterChange", function(event, slick, currentSlide, nextSlide){
+    console.log(currentSlide) 
+    $(".countsSlides span").text(currentSlide + 1 + '/6');
   });
 
 })

@@ -48,7 +48,9 @@ a { /*цвет ссылки логотипа*/
   height: 100vh;
 }
 
-
+img {
+  height: 100vh;
+}
 
 /* Slider next prev */
 .slick-track {
@@ -107,20 +109,27 @@ a { /*цвет ссылки логотипа*/
   transform: rotate(135deg);
 }
 
+/* Number */
+.slider {
+  position: absolute;
+  bottom: 0.1vh;
+  text-align: center;
+  font-size:67px;
+  font-weight:900;
+  background: linear-gradient(yellow, orange);
+}
 
+.number {
+  position: absolute;
+  left: 135vh;
+}
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(219, 212, 212, 0.8);
 }
 
-.numbertext {
-  color: #000;
-  font-size: 5vh;
-  position: fixed;
-  top: 87vh;
-  right: 10vh;
-}
+
 
 
 /*адаптив под 720*/
