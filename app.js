@@ -19,5 +19,16 @@ $(document).ready(function(){
     $(".countsSlides span").text(currentSlide + 1 + '/6');
   });
 
+
+  /* Menu icon */
+  $("#menu-icon").on("click", function(event) { /**выбираем селекрот nav_toggle следим по клику по этому элементу */
+    event.preventDefault(); /**убрали стандартное поведение кнопки */
+
+    $(this).toggleClass("active"); /*дали класс active нашему бургеру*/
+    $("#nav").toggleClass("active");/**при клике добавляем либо убираем класс active для меню */
+   
+    });
+
+
 })
   
