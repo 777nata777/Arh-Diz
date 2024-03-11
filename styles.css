@@ -247,26 +247,29 @@ body {
     transition: background .2 linear;
   }
 
-  .menu-icon:active .two {
+  .menu-icon.active .two {
     background: none;
   }
 
-  .menu-icon:active .one {
-    transform-origin: left top; /*трансформация с верхней левой точки*/
-    transform: rotate(45deg) translateX(-2px);/*поворот элемента на 45градусов ,и выравнивание по оси y*/
-  }
-
-  .menu-icon:active .three {
-    transform-origin: left bottom; /*трансформация с верхней левой точки*/
-    transform: rotate(-45deg) translateX(-4px);/*поворот элемента на 45градусов*/
-  }
-
-  .one,
+  .one
   .three {
     transition: transform .2 linear;/*плавная трансформация*/
   }
 
+  .menu-icon.active .one {
+    transform-origin: left top; /*трансформация с верхней левой точки*/
+    transform: rotate(45deg) translateX(3px);/*поворот элемента на 45градусов ,и выравнивание по оси y*/
+  }
+
+  .menu-icon.active .three {
+    transform-origin: left bottom; /*трансформация с верхней левой точки*/
+    transform: rotate(-45deg) translateX(2px);/*поворот элемента на 45градусов*/
+  }
+
   /* кнопка слайда */
+  .slick-arrow {
+    top: 82%;
+  }
   .slick-arrow:after {
     content: "";
     display: block;
@@ -281,7 +284,7 @@ body {
   }
   
   .slick-next {
-    top: 89%;
+    top: 83%;
     left: 45%;
     transform: rotate(135deg);
   }
@@ -298,7 +301,7 @@ body {
   }
   
   .slick-next {
-    top: 89%;
+    top: 83%;
     left: 50%;
     transform: rotate(135deg);
   }

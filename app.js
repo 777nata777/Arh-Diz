@@ -6,7 +6,7 @@ $(document).ready(function(){
     fade: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true, /*включание автолистания слайда*/
     autoplaySpeed: 3000,
   });
 
